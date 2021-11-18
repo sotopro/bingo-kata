@@ -21,7 +21,7 @@ class BingoGeneratorCard
         $this->grid['G'] = $this->generateColumnBoundaries(46, 60);
         $this->grid['O'] = $this->generateColumnBoundaries(61, 75);
 
-        $this->grid['N'] = null;
+        $this->grid['N'][2] = null;
         return new Card($this->grid);
     }
 

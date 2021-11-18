@@ -44,4 +44,15 @@ class Card {
     {
         return isNull($this->grid['N'][2]);
     }
+
+    public function getNumbersCard(): array
+    {
+        return array_merge(
+            $this->grid['B'],
+            $this->grid['I'],
+            $this->grid['N'],
+            $this->grid['G'],
+            $this->grid['O']
+        );
+    }
 }
