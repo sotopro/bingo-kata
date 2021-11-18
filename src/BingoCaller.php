@@ -7,6 +7,11 @@ class BingoCaller {
     {
     }
     public function callNumber (){
-        return 0;
+        do {
+            $number = rand(1, 75);
+        } while(in_array($number, $this->$numbers));
+
+        $this->$numbers[] = $number;
+        return rand(1, 75);
     }
 }
