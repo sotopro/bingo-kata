@@ -1,6 +1,5 @@
 <?php
 use PHPUnit\Framework\TestCase;
-use src\BingoCaller;
 
 class BingoCallerTest extends TestCase {
     public function testCallNumbersInValidRange(){
