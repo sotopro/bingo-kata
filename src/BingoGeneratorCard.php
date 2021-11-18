@@ -1,6 +1,5 @@
 <?php
 
-use JetBrains\PhpStorm\Pure;
 use Models\Card;
 
 class BingoGeneratorCard
@@ -13,7 +12,7 @@ class BingoGeneratorCard
         'O' => [],
     ];
 
-    #[Pure] public function generate(): Card
+    public function generate(): Card
     {
         $this->grid['B'] = $this->generateColumnBoundaries(1,15);
         $this->grid['I'] = $this->generateColumnBoundaries(16, 30);
