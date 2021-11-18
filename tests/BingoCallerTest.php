@@ -15,7 +15,7 @@ class BingoCallerTest extends TestCase {
         $expectedNumbers = range(1, 75);
 
         for($i=1; $i<=75; ++$i){
-            $calledNumbers[] = $caller->callNumber()
+            $calledNumbers[] = $caller->callNumber();
         }
 
         sort($calledNumbers);
